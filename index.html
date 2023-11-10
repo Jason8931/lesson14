@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение файла стилей CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <br>
+    <br>
+
+    <div class="d-inline-block">
+        <ul class="list-group">
+            <li class="list-group-item">Понедельник</li>
+            <li class="list-group-item">Вторник</li>
+            <li class="list-group-item">Среда</li>
+            <li class="list-group-item">Четверг</li>
+            <li class="list-group-item">Пятница</li>
+            <li class="list-group-item active">Суббота</li>
+            <li class="list-group-item active">Воскресенье</li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="logo.png" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Заголовок карточки</h5>
+            <p class="card-text">Небольшой пример текста, который должен основываться
+                на названии карточки и составлять основную часть содержимого карты.</p>
+            <a href="#" class="btn btn-primary">Подробнее</a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/picture.jpg" alt="...">
+        <div class="card-header">
+            <h5 class="card-title">Заголовок
+                карточки</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text">Небольшой пример текста,
+                который должен основываться на названии карточки и составлять основную часть
+                содержимого карты.</p>
+        </div>
+        <div class="card-footer">Подвал</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Модальное окно -->
+    <div id="window" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!--Заголовок окна -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Заголовок</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;</button>
+                </div>
+                <!--Содержание окна -->
+                <div class="modal-body">
+                    <p>Содержимое</p>
+                </div>
+                <!--подвал окна -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data - dismiss="modal"> Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Кнопка для открытия модального окна -->
+    <button type="button" id="launcher" class="btn btn-link"> Запустить модальное
+        окно</button>
+    <!-- Подключение библиотек jQuery и Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- JavaScript код для открытия модального окна по клику на кнопке -->
+    <script>
+        $("#launcher").on("click", function () {
+            $("#window").modal("show");
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+</body>
+
+</html>
